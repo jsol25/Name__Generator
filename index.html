@@ -9,8 +9,34 @@
   <title>Name Generator</title>
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer type="module"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body>
-  
+
+<!-- Using BEM to create class and ID names -->
+<!-- aria used for accessability -->
+
+<body class="body">
+
+  <header class="header">
+    <i class="fab fa-youtube header__icon header__icon"></i>
+    <h1 class="header__title">Random Name Generator</h1>
+  </header>
+
+  <hr>
+
+  <main class="main">
+    
+    <form class="main__form" id="main__form">
+      <input type="text" class="form__input" id="form__input" placeholder="Enter Name" maxlength="20" aria-label="Enter Name" aria-required="true">
+      <button type="submit" aria-label="submit" class="form__button" id="form__button">
+        <i class="fa fa-check form__icon"></i>
+      </button>
+    </form>
+    
+    <section class="main__section" id="main__section">
+    </section>
+
+  </main>
+
 </body>
 </html>
