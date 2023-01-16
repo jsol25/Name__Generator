@@ -8,7 +8,57 @@
 
 :root {
   /*FONT*/
+  --TX-SHADOW: 0px 0px 3px rgba(28,110,164,0.82);
+  /*COLOR*/
+  --BG-COLOR: rgb(184, 66, 66);
   /*GENERAL*/
+  --PADDING: 1rem;
 }
 
 /* ||MAIN */
+
+html {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--BG-COLOR); /*Fall Back incase background fails*/
+  background:  radial-gradient(circle at top right, rgb(42, 22, 22), var(--BG-COLOR));
+}
+
+body {
+  width: 450px;
+  box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.82);
+  background-color: rgb(223, 61, 12);
+  padding: var(--PADDING);
+}
+
+.header{
+  display: flex;
+  flex: row nowrap;
+  align-items: center;
+}
+.header__icon {
+  font-size: 6rem;
+  text-shadow: var(--TX-SHADOW);
+}
+.header__title {
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: var(--TX-SHADOW);
+}
+
+.main__form {
+  display: flex;
+  padding-top: var(--PADDING);
+  place-content: center;
+}
+
+.form__input, .form__button {
+  font-size: 1.92REM;
+  text-shadow: var(--TX-SHADOW);
+}
+
+.form__button {
+  background-color: rgb(55, 202, 55);
+}
