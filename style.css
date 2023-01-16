@@ -9,6 +9,7 @@
 :root {
   /*FONT*/
   --TX-SHADOW: 0px 0px 3px rgba(28,110,164,0.82);
+  --SM-TX--SHADOW: text-shadow: 0px 0px 2px rgba(28,110,164,0.37);
   /*COLOR*/
   --BG-COLOR: rgb(184, 66, 66);
   /*GENERAL*/
@@ -56,9 +57,37 @@ body {
 
 .form__input, .form__button {
   font-size: 1.92REM;
-  text-shadow: var(--TX-SHADOW);
+  text-shadow: var(--SM-TX-SHADOW);
 }
 
 .form__button {
   background-color: rgb(55, 202, 55);
+}
+
+.main__section{
+  padding-top: var(--PADDING);
+  padding-left: 2rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  text-shadow: var(--SM-TX-SHADOW);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(6, 3, 189);
+}
+
+.unordered__list {
+  padding-left: var(--PADDING);
 }

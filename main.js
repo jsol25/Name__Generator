@@ -36,8 +36,9 @@ const displayNames = (nameList) => {
   const list = document.querySelector(".main__section ol");
   const input = document.getElementById("form__input").value;
   nameList.forEach(name => {
-    list.innerHTML += `<li><a href="https://www.youtube.com/@${name}">${name}</a></li>`;
-    list.innerHTML += `<ul><br><li><a href="https://www.youtube.com/@${input}s${name}">${input}s${name}</a></li>
-    <br><li><a href="https://www.youtube.com/@${name}With${input}">${name}With${input}</a></li></ul>`
+    list.innerHTML += `<li class ="list__header"><h2><a href="https://www.youtube.com/@${name}">${name}</a></h2></li>`;
+    list.innerHTML += `<ul class="unordered__list"><br><li class="unorderd__item"><a href="https://www.youtube.com/@${input}s${name}">${input}s${name}</a></li>
+    <br><li class="unorderd__item"><a href="https://www.youtube.com/@${name}With${input}">${name}With${input}</a></li></ul>
+    <br>`
   });
 } /*Used a forEach loop to enter HTML text and display suggested names*/
